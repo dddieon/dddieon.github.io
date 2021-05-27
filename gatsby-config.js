@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `GATSBY BLOG`,
+    title: `DDieon Vlog`,
     author: {
       name: `jeongyun.lee`,
       summary: `FE Engineer`,
