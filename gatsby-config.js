@@ -2,21 +2,15 @@ module.exports = {
   siteMetadata: {
     title: `DDieon Vlog`,
     author: {
-      name: `jeongyun.lee`,
-      summary: `FE Engineer`,
-      selfIntroduction: `Hello, this is a place where you can introduce yourself. 
-      If you modify Gatsby-config,
-      you can customize it freely! Thank you.`,
+      name: `Jiwon Jeon`,
+      summary: `Junior Front-End Developer`,
+      selfIntroduction: `너구리인 척 하는 그냥 사람`,
     },
-    description: `blog starter`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `주니어 프론트엔드 개발자의 개발 블로그`,
+    siteUrl: `https://dddieon.github.io/`,
     social: {
       git: `https://github.com`,
-      instagram: `https://www.instagram.com`,
-      twitter: `https://twitter.com/?lang=ko`,
-      linkdein: `https://kr.linkedin.com`,
-      facebook: `https://facebook.com`,
-      mail: `admin@gmail.com`,
+      mail: `hocldy@naver.com`,
     },
     commentInfo: {
       service: 'utterances', // select utterances or disqus
