@@ -27,7 +27,8 @@ interface Props {
 }
 
 export default function Card({ post, thumbnail }: Props) {
-  const title = post.frontmatter.title.split(' ')[0] || post.fields.slug;
+  const splitedTitle = post.frontmatter.title.split(' ')[0] || post.fields.slug;
+  const { title } = post.frontmatter;
   const { category } = post.frontmatter;
   const themeSize = 3;
   const themeStartNumber = 1;
@@ -43,7 +44,7 @@ export default function Card({ post, thumbnail }: Props) {
               Math.random() * themeSize + themeStartNumber,
             )}`}
           >
-            <span>{title}</span>
+            <span>{splitedTitle}</span>
           </div>
         )}
         <div className="card--desc">

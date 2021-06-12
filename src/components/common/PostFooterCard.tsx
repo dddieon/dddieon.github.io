@@ -24,7 +24,7 @@ interface Props {
 }
 
 export default function PostFooterCard({ post, thumbnail }: Props) {
-  const title = post.frontmatter.title.split(' ')[0] || post.fields.slug;
+  const title = post.frontmatter.title || post.fields.slug;
   const themeSize = 3;
   const themeStartNumber = 1;
 

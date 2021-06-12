@@ -68,6 +68,7 @@
       margin-bottom: 18px;
       a,
       img {
+        width: initial !important;
         margin-right: 8px;
         &:hover {
           color: $theme-green;
@@ -147,6 +148,9 @@
     margin: $spacing-0 $spacing-0 $spacing-8 $spacing-0;
     padding: $spacing-0;
     color: $gray;
+    > img {
+      width: 100%;
+    }
   }
 
   ul,
