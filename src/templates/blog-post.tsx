@@ -50,7 +50,7 @@ const BlogPostTemplate = ({ data, location }) => {
     });
     const image = regex.exec(htmlString);
     if (image && image.length) {
-      return `${image[0].split('srcset')[0]}/>`;
+      return `${image[0].split('srcset')[0]}`;
     }
     return null;
   };
