@@ -37,13 +37,6 @@ const SEO = ({ description, lang, meta, title }) => {
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      link={[
-        {
-          rel: `stylesheet`,
-          type: `text/css`,
-          href: `https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css`,
-        },
-      ]}
       meta={[
         {
           name: `description`,
