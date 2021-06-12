@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 // import twitter from '../../images/about/twitter.svg';
 // import facebook from '../../images/about/facebook.svg';
 // import linkdein from '../../images/about/linkdein.svg';
-// import circle from '../../images/about/circle.svg';
+import circle from '../../images/about/circle.svg';
 
 import '../../styles/components/common/contacts.scss';
 
