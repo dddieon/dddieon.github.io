@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dilog]]></title><description><![CDATA[주니어 프론트엔드 개발자의 개발 블로그.]]></description><link>https://dddieon.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Jun 2021 13:23:51 GMT</lastBuildDate><item><title><![CDATA[[react] useRef를 반복문에서 사용하기]]></title><description><![CDATA[ref를 객체로 정의하고, 반복적으로 노드에 대한 참조값을 저장합시다. document.getElementBy를 지양하고 ref를 써야하는 이유 id는 중복선언을 하면 안된다. 하지만 사람은 언제나 실수를 할 수 있고, id…]]></description><link>https://dddieon.github.io/diary/2/</link><guid isPermaLink="false">https://dddieon.github.io/diary/2/</guid><pubDate>Thu, 17 Jun 2021 12:48:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dilog]]></title><description><![CDATA[주니어 프론트엔드 개발자의 개발 블로그.]]></description><link>https://dddieon.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Jun 2021 13:34:00 GMT</lastBuildDate><item><title><![CDATA[[react] useRef를 반복문에서 사용하기]]></title><description><![CDATA[ref를 객체로 정의하고, 반복적으로 노드에 대한 참조값을 저장합시다. document.getElementBy를 지양하고 ref를 써야하는 이유 id는 중복선언을 하면 안된다. 하지만 사람은 언제나 실수를 할 수 있고, id…]]></description><link>https://dddieon.github.io/react/2021-06-17/</link><guid isPermaLink="false">https://dddieon.github.io/react/2021-06-17/</guid><pubDate>Thu, 17 Jun 2021 12:48:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;ref를 객체로 정의하고, 반복적으로 노드에 대한 참조값을 저장합시다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;document.getElementBy를 지양하고 ref를 써야하는 이유&lt;/h2&gt;
@@ -39,7 +39,7 @@ dom을 조작할 수 있게 되었다.&lt;/p&gt;
     myRefs.current.CC.style.backgroundColor = &amp;quot;red&amp;quot;
 }, []);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;CC는 빨개진다.&lt;/p&gt;
-&lt;p&gt;끝!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[문창과(문예창작학과) 전공자가 개발자가 되는 이야기]]></title><description><![CDATA[개츠비 블로그를 처음으로 만들었다. 첫글은 역시 잡소리가 좋아보인다. 201…]]></description><link>https://dddieon.github.io/diary/1/</link><guid isPermaLink="false">https://dddieon.github.io/diary/1/</guid><pubDate>Sun, 13 Jun 2021 12:48:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;끝!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[문창과(문예창작학과) 전공자가 개발자가 되는 이야기]]></title><description><![CDATA[개츠비 블로그를 처음으로 만들었다. 첫글은 역시 잡소리가 좋아보인다. 201…]]></description><link>https://dddieon.github.io/diary/2021-06-13/</link><guid isPermaLink="false">https://dddieon.github.io/diary/2021-06-13/</guid><pubDate>Sun, 13 Jun 2021 12:48:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;개츠비 블로그를 처음으로 만들었다. 첫글은 역시 잡소리가 좋아보인다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;2015: 문예창작학과 입학&lt;/h2&gt;
