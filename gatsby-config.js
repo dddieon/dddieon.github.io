@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `DDieon Vlog`,
+    title: `Dilog`,
     author: {
       name: `Jiwon Jeon`,
       summary: `Junior Front-End Developer`,
-      selfIntroduction: `너구리인 척 하는 그냥 사람`,
+      selfIntroduction: `너구리인 척하는 그냥 사람`,
     },
-    description: `주니어 프론트엔드 개발자의 개발 블로그`,
+    description: `주니어 프론트엔드 개발자의 개발 블로그.`,
     siteUrl: `https://dddieon.github.io/`,
     social: {
       git: `https://github.com`,

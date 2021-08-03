@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/pages/about.scss';
+import { StaticImage } from 'gatsby-plugin-image';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Contacts from '../components/common/Contacts';
-import profile from '../images/about/profile.svg';
 import { COLOR } from '../constants/togglerType';
 
 const About = ({ location }) => {
@@ -35,7 +35,7 @@ const About = ({ location }) => {
       <div className="about-page">
         <h2 className={theme('about-name')}>{author.name}</h2>
         <p className={theme('self-introduction')} dangerouslySetInnerHTML={{ __html: instruction }} />
-        <img className="profile-image" src={profile} alt="profile" />
+        <StaticImage className="profile-image" src={'../images/profile-neoguri.png'} alt="profile" />
         <Contacts />
       </div>
     </Layout>

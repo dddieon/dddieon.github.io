@@ -29,6 +29,25 @@ html {
   font-size: $fontSize-root;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &::-webkit-scrollbar {
+    width: $scrollbar-width;
+    height: $scrollbar-width;
+  }
+  &::-webkit-scrollbar-track {
+    margin-right: 2px;
+    width: 16px;
+    box-sizing: content-box;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    box-sizing: content-box;
+    border-radius: 8px;
+    background-color: $gray;
+    border: solid 3px transparent;
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
 }
 
 body {
