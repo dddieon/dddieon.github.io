@@ -18,7 +18,7 @@ const BlogIndex = ({ data, location }) => {
   const [category, setCategory] = useState<string>((parse(globalHistory.location.search)?.category as string) || 'All');
 
   const getThumbnail = (postIndex) => {
-    const regex = /<img[^>]+src\s*=\s*['"]([^'"]+)['"][^>]*>/g;
+    const regex = /<img[^>]+src\s*=\s*['"]([^'"]+)['"][^>]*/g;
     const htmlString = data.allMarkdownRemark.nodes.map((htmlCode, htmlIndex) => {
       if (postIndex === htmlIndex) {
         return htmlCode.html;
@@ -27,7 +27,7 @@ const BlogIndex = ({ data, location }) => {
     });
     const image = regex.exec(htmlString);
     if (image && image.length) {
-      return `${image[0].split('srcset')[0]}`;
+      return `${image[0].split('srcset')[0]}>`;
     }
     return null;
   };
