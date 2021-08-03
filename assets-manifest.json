@@ -1,5 +1,4 @@
 {
   "main.js": "render-page.js",
-  "render-page.js.map": "render-page.js.map",
-  "static/profile.svg": "static/profile-4577bc5572ee09c0e7c9bd93e35ba753.svg"
+  "render-page.js.map": "render-page.js.map"
 }
