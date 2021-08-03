@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dilog]]></title><description><![CDATA[주니어 프론트엔드 개발자의 개발 블로그.]]></description><link>https://dddieon.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Jun 2021 13:34:00 GMT</lastBuildDate><item><title><![CDATA[[react] useRef를 반복문에서 사용하기]]></title><description><![CDATA[ref를 객체로 정의하고, 반복적으로 노드에 대한 참조값을 저장합시다. document.getElementBy를 지양하고 ref를 써야하는 이유 id는 중복선언을 하면 안된다. 하지만 사람은 언제나 실수를 할 수 있고, id…]]></description><link>https://dddieon.github.io/react/2021-06-17/</link><guid isPermaLink="false">https://dddieon.github.io/react/2021-06-17/</guid><pubDate>Thu, 17 Jun 2021 12:48:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dilog]]></title><description><![CDATA[주니어 프론트엔드 개발자의 개발 블로그.]]></description><link>https://dddieon.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 03 Aug 2021 17:39:15 GMT</lastBuildDate><item><title><![CDATA[[react] useRef를 반복문에서 사용하기]]></title><description><![CDATA[ref를 객체로 정의하고, 반복적으로 노드에 대한 참조값을 저장합시다. document.getElementBy를 지양하고 ref를 써야하는 이유 id는 중복선언을 하면 안된다. 하지만 사람은 언제나 실수를 할 수 있고, id…]]></description><link>https://dddieon.github.io/react/2021-06-17/</link><guid isPermaLink="false">https://dddieon.github.io/react/2021-06-17/</guid><pubDate>Thu, 17 Jun 2021 12:48:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;ref를 객체로 정의하고, 반복적으로 노드에 대한 참조값을 저장합시다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;document.getElementBy를 지양하고 ref를 써야하는 이유&lt;/h2&gt;
@@ -39,7 +39,123 @@ dom을 조작할 수 있게 되었다.&lt;/p&gt;
     myRefs.current.CC.style.backgroundColor = &amp;quot;red&amp;quot;
 }, []);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;CC는 빨개진다.&lt;/p&gt;
-&lt;p&gt;끝!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[문창과(문예창작학과) 전공자가 개발자가 되는 이야기]]></title><description><![CDATA[개츠비 블로그를 처음으로 만들었다. 첫글은 역시 잡소리가 좋아보인다. 201…]]></description><link>https://dddieon.github.io/diary/2021-06-13/</link><guid isPermaLink="false">https://dddieon.github.io/diary/2021-06-13/</guid><pubDate>Sun, 13 Jun 2021 12:48:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;끝!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Redux Saga 사용하는 이유와 세팅 메모]]></title><description><![CDATA[대충 saga의 작동방식  Thunk와 차이: Thunk에선 제공하지 않는 기능도 있음 setTimeout…]]></description><link>https://dddieon.github.io/react/2021-08-04/</link><guid isPermaLink="false">https://dddieon.github.io/react/2021-08-04/</guid><pubDate>Sun, 13 Jun 2021 12:48:00 GMT</pubDate><content:encoded>&lt;h2&gt;대충 saga의 작동방식&lt;/h2&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/eab4f10f843908c80f0d48508ca3ff78/6acbf/saga2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.89873417721519%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGElEQVQoz42S228SURDGN+FFo4mtC9QuhdIVSosINvSC1iY+WN9ao7FQjIkFWjUobaq+Vh+8JiYm/EW1l3cTbfTRGNKm4bYgyEV2+bmQUE2N0S+ZMyfnzHzfzJwjKIpCLpenVquRTqfJ5nIUlTy5bIa9vT2y2SyapvKtoLC/v08qlSKfV1h5+JiR0QAXJ6cIjI/jGnTyZG0NodFoUK/XaflqtUqtodJUMtR1oVK1RqVaR9Xv1GqJHxrtGE3TmA+FMFsHcHl9SE43R7tNxBPLCJlMBkVXL5VKdNCsFKFR4RdU0Mqtm4OTl69ec3l6munrc1yaj+K/MsvzN28RCl8+onz9TDG9qys32+otfPrwnsVohPjibR7cjXIvcovYzRtEFxZYWrrDtauzPH32gl2lTCGXJa+P6Hu5jMAhqKra9u82NunukeizSvTbJCSrBdFkRDSexGwWOXL8GJGVR4fTEZrNJr9bh3B7c4OBYQ++C5OMnQ/gm5hg0OtBdrtxeM4i2mWWV1cPimh11soX9JW2HapwSye0D3uxj05hPxfA6h3D5nTRJzvpdwzRdaKL+/F4O7ZD1q7wby1vb20hu9yM+P34fR7ODLlwyAPIsh3HaRlRFEkkEv9PuL6+jvlULxabnV5JwmK1Yu4xY9TnZzSZMBgMxGKxfxN2XnlnZ4dQMEgwOEdQ/3NBfR/SfcvC4TAzMzMkk8k/CH8Ch/hYvW3TRqYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;saga패턴&quot;
+        title=&quot;saga패턴&quot;
+        src=&quot;/static/eab4f10f843908c80f0d48508ca3ff78/f058b/saga2.png&quot;
+        srcset=&quot;/static/eab4f10f843908c80f0d48508ca3ff78/c26ae/saga2.png 158w,
+/static/eab4f10f843908c80f0d48508ca3ff78/6bdcf/saga2.png 315w,
+/static/eab4f10f843908c80f0d48508ca3ff78/f058b/saga2.png 630w,
+/static/eab4f10f843908c80f0d48508ca3ff78/40601/saga2.png 945w,
+/static/eab4f10f843908c80f0d48508ca3ff78/6acbf/saga2.png 1001w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Thunk와 차이: Thunk에선 제공하지 않는 기능도 있음&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;setTimeout을 쉽게 구현하는 기능이나,&lt;/li&gt;
+&lt;li&gt;쓰로틀링: 중복요청을 막는 방법. 마지막 요청만 인정해주거나 시간당 횟수 제한 등이 가능
+⇒ (스크롤이벤트시 요청이 수백개 가는 것을 방지할 때 씀)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;설치&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; i redux-saga &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; i next-redux-saga&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;제너레이터의 원리로 만들어진다 (생성자 함수)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Generator : 빠져나갔다가 나중에 다시 돌아와도 사용가능한 함수. 이때 컨텍스트(변수 값)는 출입 과정에서 저장된 상태로 남아 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;사가 이펙트를 통한 여러 기능들&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;all : 배열을 받아와 한꺼번에 실행&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;fork&lt;/strong&gt; : 비동기함수호출(요청 &lt;strong&gt;안기다림&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;call&lt;/strong&gt; : 동기함수호출(요청을 &lt;strong&gt;기다림&lt;/strong&gt; - .then()처럼 작동)&lt;/li&gt;
+&lt;li&gt;take : 액션을 기다림&lt;/li&gt;
+&lt;li&gt;put : dispatch 와 동일&lt;/li&gt;
+&lt;li&gt;delay&lt;/li&gt;
+&lt;li&gt;debounce&lt;/li&gt;
+&lt;li&gt;throttle&lt;/li&gt;
+&lt;li&gt;takeLatest: 기존에 진행 중이던 작업이 있다면 취소 처리하고 가장 마지막으로 실행된 작업만 수행한다. (더블클릭 방지 등)&lt;/li&gt;
+&lt;li&gt;takeEvery: take가 비동기로 동작함&lt;/li&gt;
+&lt;li&gt;…&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;사용방법&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 2개가 한 묶음이라고 보면 됨 (api요청함수 따로 / 요청감지함수 따로)&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;logInAPI&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; axios&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/api/login&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;logIn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//const result = yield call(logInAPI, action.data);&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      type&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;LOG_IN_SUCCESS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      data&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; action&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//성공결과&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;put&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      type&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;LOG_IN_FAILURE&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      error&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;response&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//실패결과&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;saga가 요청을 감지하는 기능: take나 takeLatest나 takeEvery&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;//1 while문 쓰기&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;watchLogin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;//이벤트리스너처럼 동작: 비동기액션생성함수가 &quot;특정이벤트&quot; 감지(두번째 매개변수 logIn을 감지한다)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;take&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;LOG_IN_REQUEST&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; logIn&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;//2 takeEvery 쓰기&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; takeEvery &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;redux-saga/effects&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;watchLogin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;takeEvery&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;LOG_IN_REQUEST&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; logIn&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;단, takeEvery시에는 서버쪽으로 요청은 연속으로 보내진다.&lt;/li&gt;
+&lt;li&gt;응답만 취소할 뿐! 그러니 &lt;strong&gt;서버쪽에서 중복요청을 취소&lt;/strong&gt;하도록 하자.&lt;/li&gt;
+&lt;li&gt;일정시간동안 요청 막는 법인 throttle도 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;세팅 방법&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;컴바인리듀서 처럼 복잡하진 않다&lt;/li&gt;
+&lt;li&gt;index.js에 여러 saga들을 묶어주자…&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// sagas/post.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;postSaga&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;fork&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;watchAddPost&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// sagas/index.js&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; all&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fork &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;redux-saga/effects&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; postSaga &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./post&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; userSaga &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./user&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;rootSaga&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;fork&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;postSaga&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;fork&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;userSaga&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[문창과(문예창작학과) 전공자가 개발자가 되는 이야기]]></title><description><![CDATA[개츠비 블로그를 처음으로 만들었다. 첫글은 역시 잡소리가 좋아보인다. 201…]]></description><link>https://dddieon.github.io/diary/2021-06-13/</link><guid isPermaLink="false">https://dddieon.github.io/diary/2021-06-13/</guid><pubDate>Sun, 13 Jun 2021 12:48:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;개츠비 블로그를 처음으로 만들었다. 첫글은 역시 잡소리가 좋아보인다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;2015: 문예창작학과 입학&lt;/h2&gt;
